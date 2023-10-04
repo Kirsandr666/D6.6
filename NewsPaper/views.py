@@ -7,6 +7,7 @@ class PostsList(ListView):
     ordering = 'title'
     template_name = 'news.html'
     context_object_name = 'posts'
+    paginate_by = 2
 
 class PostDetail(DetailView):
     model = Post
